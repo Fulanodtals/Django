@@ -1,21 +1,32 @@
-# introducao ao projeto
+# Programando em Django
 
-Todo projeto django comeca com uma pasta base instalada pelo terminal:
+Guia passo a passo para usar o django, acompanhe:
+
+<div>
+    <li><a href="#instalacao">Instalação </a></li>
+    <li><a href="#titulo2">TítuloDois</a></li>
+    <li><a href="#titulo3">TítuloTres</a></li>
+    <li><a href="#titulo4">TítuloQuatro</a></li>
+    <li><a href="#titulo5">TítuloCinco</a></li>
+</div><br>
+
+
+
+<p id='instalacao'></p> <!gambiarra para linkar->
+
+## Instalação 
+Para fazer a instalacao do Django é necessario que o python esteja instalado em sua maquina, verifique isso usando o comando:
 ```md
-django-admin startproject <nome_do_projeto>
+python --version
+> Python 3.12.3
 ```
-
-Depois da criacao varias pastas sao criadas, porem antes de mecher vamos primeiramente `crie o aplicativo` onde ira rodar a aplicacao para o main, assim, dentro da pasta do projeto digite:
+Apos isso, intale o framework django usando pip:
 ```md
-django-admin startapp <app_nome>
+pip install django
 ```
-Assim nesse app sera feito a conexao(rota) com o arquivo html, css ou javaScript para o site. <br>
-dentro do arquivo urls.py do app voce fara a rota:
-<img src='vews.png' style='border:solid black 2px; padding:3px;margin:13px;'>
-
-
-Após isso voce pode testar se esta funcionando `iniciando o servidor` no terminal:
+por fim verifique se o django esta corretamente instalado com:
 ```md
-python manage.py runserver
+pip show django
+> Name: Django
+> Version: 5.0.7
 ```
-ao rodar isso tambem sera criada um arquivo de banco de dados em sqlite3
